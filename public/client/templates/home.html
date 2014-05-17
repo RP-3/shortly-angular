@@ -1,1 +1,13 @@
-
+<div id='container'>
+  <div class='links'>
+    <div class='link' ng-repeat='url in link.links'>
+      <img src='/client/redirect_icon.png'/>
+      <div class='info'>
+        <div class='visits'><span class='count'>{{ url.visits }}</span>Visits</div>
+        <div class='title'>{{ url.title }}</div>
+        <div class='original'>{{ url.url }}</div>
+        <a href='{{url.base_url }}/{{url.code}}'>{{ url.base_url }}/{{ url.code }}</a>
+      </div>
+    </div>
+  </div>
+</div>
